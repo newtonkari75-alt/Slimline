@@ -32,7 +32,7 @@
             animation: marquee 30s linear infinite;
         }
 
-        /* Hero Background: Alinhamento Mobile ajustado para aparecer a modelo */
+        /* Hero Background */
         .hero-background {
             background-image: url('images/slimsline-fund2.png');
             background-size: cover;
@@ -41,7 +41,7 @@
             background-attachment: scroll;
         }
 
-        /* Última Sessão Background: Alinhamento Mobile ajustado para visibilidade da foto */
+        /* Última Sessão Background */
         .order-section-bg {
             background-image: url('images/imgi_11_order_bg.jpg');
             background-size: cover;
@@ -49,17 +49,18 @@
             background-repeat: no-repeat;
         }
 
-        /* Media Query para Mobile: Ajuste de alinhamento das fotos de fundo */
+        /* Media Query para Mobile: Ajuste de alinhamento solicitado */
         @media (max-width: 1023px) {
             .hero-background {
-                background-position: 25% center; 
+                /* Ajustado para centralizar o corpo da modelo no mobile */
+                background-position: center center; 
             }
             .order-section-bg {
                 background-position: 35% center;
             }
         }
 
-        /* Formatação de Título conforme imagem image_40d764.png */
+        /* Formatação de Título */
         .title-main { 
             color: #FFFFFF; 
             text-shadow: 0 4px 15px rgba(0,0,0,0.15); 
@@ -136,7 +137,7 @@
                         </div>
                     </div>
 
-                    <!-- Botão CTA Hero: Ajuste Mobile (Texto curto) -->
+                    <!-- Botão CTA Hero -->
                     <div class="flex justify-center lg:justify-end">
                         <a href="https://vjouu.doctorwso.com/l" class="bg-white hover:bg-zinc-50 text-[#0F172A] font-black py-6 px-12 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 uppercase tracking-wide text-base md:text-lg text-center border-2 border-black/5">
                             <span class="hidden lg:inline">CHCĘ OCZYŚCIĆ SWÓJ ORGANIZM TERAZ — 50% TANIEJ</span>
@@ -188,7 +189,7 @@
             </div>
         </section>
 
-        <!-- Secção 3: Tripla ajuda (Botão CTA com Texto Curto no Mobile) -->
+        <!-- Secção 3: Tripla ajuda -->
         <section id="order" class="order-section-bg py-24 md:py-40 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6 flex flex-col items-center lg:flex-row lg:justify-between gap-12 relative z-10">
                 
@@ -224,7 +225,7 @@
                     </div>
                 </div>
 
-                <!-- Foto do Produto (Aparece em 2º no mobile) -->
+                <!-- Foto do Produto -->
                 <div class="w-full lg:w-2/5 flex justify-center lg:justify-end mb-8 lg:mb-0 order-2">
                     <img src="images/slimline-pl.png" 
                          onerror="this.src='https://via.placeholder.com/500x700?text=Slimline+Polska'"
@@ -232,7 +233,7 @@
                          alt="Slimline Suplement">
                 </div>
 
-                <!-- Botão CTA Final: Ajuste Mobile (Texto curto) -->
+                <!-- Botão CTA Final -->
                 <div class="w-full flex justify-center lg:justify-start lg:absolute lg:bottom-20 lg:left-6 mt-4 order-3">
                     <a href="https://vjouu.doctorwso.com/l" class="inline-block bg-[#0F172A] hover:bg-black text-white font-black py-6 px-16 rounded-2xl shadow-2xl transition-all transform hover:scale-105 active:scale-95 uppercase tracking-widest text-base md:text-lg text-center">
                         <span class="hidden lg:inline">TAK! ZAMAWIAM SLIMLINE Z RABATEM 50%</span>
