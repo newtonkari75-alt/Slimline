@@ -32,18 +32,18 @@
             animation: marquee 30s linear infinite;
         }
 
-        /* Imagem de fundo da Secção 1 - Atualizada para slimsline-fund2.png */
+        /* Hero: Imagem mais visível e gradiente lateral para legibilidade do texto à direita */
         .hero-background {
-            background-image: linear-gradient(rgba(243, 235, 229, 0.7), rgba(243, 235, 229, 0.7)), url('images/slimsline-fund2.png');
+            background-image: linear-gradient(to left, rgba(243, 235, 229, 0.9) 20%, rgba(243, 235, 229, 0.2) 100%), url('images/slimsline-fund2.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: scroll;
         }
 
-        /* Imagem de fundo da Secção 3 */
+        /* Secção 3: Imagem de fundo mais nítida com gradiente lateral */
         .order-section-bg {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('images/imgi_11_order_bg.jpg');
+            background-image: linear-gradient(to right, rgba(255, 255, 255, 0.8) 30%, rgba(255, 255, 255, 0.1) 100%), url('images/imgi_11_order_bg.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -72,120 +72,73 @@
         </div>
     </div>
 
-    <!-- Cabeçalho (Header) -->
+    <!-- Cabeçalho -->
     <header class="absolute top-[45px] left-0 right-0 z-[60] py-4">
         <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
             <div class="flex items-center">
                 <span class="text-[#0F172A] font-black text-2xl tracking-tighter uppercase">SLIMLINE</span>
             </div>
-            <a href="https://vjouu.doctorwso.com/l" class="bg-[#F7EFDF] text-black px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-white transition-all shadow-xl active:scale-95 border border-black/10">
-                Ver Ofertas
-            </a>
         </div>
     </header>
 
     <main>
-        <!-- Secção 1: Purificação (Hero) -->
+        <!-- Secção 1: Purificação (Hero) - Texto à Direita -->
         <section class="hero-background min-h-screen flex items-center pt-32 pb-20">
-            <div class="max-w-4xl mx-auto px-6 text-center">
-                
-                <div class="mb-10">
-                    <h1 class="text-7xl md:text-9xl font-serif-display text-white drop-shadow-lg leading-none">Slimline</h1>
-                    <h2 class="text-4xl md:text-6xl font-bold font-serif-display text-[#0F172A] mt-[-10px] md:mt-[-20px] drop-shadow-sm">
-                        — isto é purificação
-                    </h2>
-                </div>
+            <div class="max-w-7xl mx-auto px-6 w-full flex justify-end">
+                <div class="max-w-2xl text-center lg:text-right">
+                    
+                    <div class="mb-10">
+                        <h1 class="text-7xl md:text-9xl font-serif-display text-white drop-shadow-lg leading-none">Slimline</h1>
+                        <h2 class="text-4xl md:text-6xl font-bold font-serif-display text-[#0F172A] mt-[-10px] md:mt-[-20px] drop-shadow-sm">
+                            — isto é purificação
+                        </h2>
+                    </div>
 
-                <p class="text-lg md:text-xl text-[#0F172A] max-w-2xl mx-auto leading-relaxed mb-16 bg-white/20 backdrop-blur-sm p-4 rounded-2xl">
-                    Nosso suplemento contém os <span class="font-bold">ingredientes desintoxicantes</span> mais potentes. Sua eficácia é <span class="font-bold">20 vezes maior</span> que a de produtos similares encontrados em farmácias.
-                </p>
+                    <p class="text-lg md:text-xl text-[#0F172A] leading-relaxed mb-12 bg-white/40 backdrop-blur-md p-6 rounded-2xl inline-block">
+                        Nosso suplemento contém os <span class="font-bold">ingredientes desintoxicantes</span> mais potentes. Sua eficácia é <span class="font-bold">20 vezes maior</span> que a de produtos similares encontrados em farmácias.
+                    </p>
 
-                <div class="grid grid-cols-1 sm:grid-cols-2 gap-8 max-w-3xl mx-auto text-left mb-16">
-                    <div class="flex items-start gap-4">
-                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm mt-1">
-                            <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 text-left mb-12">
+                        <div class="flex items-start gap-4 lg:justify-end">
+                            <p class="text-sm md:text-base font-medium order-2 lg:order-1"><span class="font-bold">Neutraliza</span> substâncias químicas nocivas</p>
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm mt-1 order-1 lg:order-2">
+                                <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
+                            </div>
                         </div>
-                        <p class="text-sm md:text-base font-medium"><span class="font-bold">Neutraliza</span> substâncias químicas nocivas</p>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm mt-1">
-                            <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
+                        <div class="flex items-start gap-4 lg:justify-end">
+                            <p class="text-sm md:text-base font-medium order-2 lg:order-1"><span class="font-bold">Melhora</span> a condição da pele e saúde.</p>
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm mt-1 order-1 lg:order-2">
+                                <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
+                            </div>
                         </div>
-                        <p class="text-sm md:text-base font-medium"><span class="font-bold">Melhora</span> a condição da pele, elimina diversas doenças.</p>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm mt-1">
-                            <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
+                        <div class="flex items-start gap-4 lg:justify-end">
+                            <p class="text-sm md:text-base font-medium order-2 lg:order-1"><span class="font-bold">Melhora</span> cabelo e unhas.</p>
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm mt-1 order-1 lg:order-2">
+                                <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
+                            </div>
                         </div>
-                        <p class="text-sm md:text-base font-medium"><span class="font-bold">Melhora</span> a condição do cabelo e das unhas.</p>
-                    </div>
-                    <div class="flex items-start gap-4">
-                        <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm mt-1">
-                            <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
+                        <div class="flex items-start gap-4 lg:justify-end">
+                            <p class="text-sm md:text-base font-medium order-2 lg:order-1"><span class="font-bold">Remove</span> toxinas do álcool e nicotina.</p>
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm mt-1 order-1 lg:order-2">
+                                <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
+                            </div>
                         </div>
-                        <p class="text-sm md:text-base font-medium"><span class="font-bold">Remove</span> o álcool e a nicotina do corpo.</p>
                     </div>
-                </div>
 
-                <div class="flex justify-center">
-                    <a href="https://vjouu.doctorwso.com/l" class="bg-white hover:bg-[#F7EFDF] text-[#0F172A] font-black py-5 px-10 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 uppercase tracking-wide text-sm md:text-base text-center">
-                        SUBMETA-SE À TERAPIA DE LIMPEZA 50% OFF
-                    </a>
-                </div>
-            </div>
-        </section>
-
-        <!-- Secção 2: Como Encomendar -->
-        <section class="bg-[#E2E8E4] py-24 md:py-32">
-            <div class="max-w-7xl mx-auto px-6 text-center">
-                <div class="mb-16 md:mb-24">
-                    <h2 class="text-6xl md:text-8xl font-serif-display text-white drop-shadow-sm leading-none">Slimline</h2>
-                    <h3 class="text-3xl md:text-5xl font-serif-display text-[#0F172A] mt-[-5px] md:mt-[-10px] uppercase tracking-wider">
-                        COMO ENCOMENDAR
-                    </h3>
-                </div>
-
-                <div class="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-8">
-                    <div class="flex flex-col items-center">
-                        <div class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-white flex items-center justify-center shadow-lg mb-8">
-                            <span class="text-4xl md:text-5xl font-serif-display font-bold">1.</span>
-                        </div>
-                        <div class="text-center max-w-[250px]">
-                            <p class="text-[#0F172A] text-sm md:text-base leading-relaxed">
-                                <span class="font-bold">Preencha o formulário de encomenda.</span><br>
-                                Os seus dados pessoais estarão protegidos.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-white flex items-center justify-center shadow-lg mb-8">
-                            <span class="text-4xl md:text-5xl font-serif-display font-bold">2.</span>
-                        </div>
-                        <div class="text-center max-w-[250px]">
-                            <p class="text-[#0F172A] text-sm md:text-base leading-relaxed">
-                                Atenda o nosso telefonema e <span class="font-bold">confirme a encomenda</span>.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="flex flex-col items-center">
-                        <div class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-white flex items-center justify-center shadow-lg mb-8">
-                            <span class="text-4xl md:text-5xl font-serif-display font-bold">3.</span>
-                        </div>
-                        <div class="text-center max-w-[250px]">
-                            <p class="text-[#0F172A] text-sm md:text-base leading-relaxed">
-                                <span class="font-bold">Receberá a sua encomenda</span> com envio imediato.
-                            </p>
-                        </div>
+                    <div class="flex justify-center lg:justify-end">
+                        <a href="https://vjouu.doctorwso.com/l" class="bg-white hover:bg-[#F7EFDF] text-[#0F172A] font-black py-5 px-10 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 uppercase tracking-wide text-sm md:text-base text-center">
+                            SUBMETA-SE À TERAPIA DE LIMPEZA 50% OFF
+                        </a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Secção 3: Tripla ajuda para o corpo -->
+        <!-- Secção 2: Tripla ajuda para o corpo - Texto à Esquerda, Imagem à Direita -->
         <section id="order" class="order-section-bg py-24 md:py-32 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12">
                 
-                <!-- Coluna de Texto e Botão (Esquerda) -->
+                <!-- Coluna de Texto (Esquerda) -->
                 <div class="w-full lg:w-3/5 text-center lg:text-left z-10">
                     <h2 class="text-7xl md:text-9xl font-serif-display text-white drop-shadow-md leading-none mb-4">Slimline</h2>
                     <h3 class="text-3xl md:text-4xl font-black text-[#0F172A] uppercase tracking-tight mb-4">
@@ -217,7 +170,6 @@
                         </div>
                     </div>
 
-                    <!-- Botão de Encomenda sem parênteses -->
                     <div class="flex justify-center lg:justify-start">
                         <a href="https://vjouu.doctorwso.com/l" class="inline-block bg-[#0F172A] hover:bg-black text-white font-black py-5 px-12 rounded-2xl shadow-2xl transition-all transform hover:scale-105 active:scale-95 uppercase tracking-widest text-sm md:text-base">
                             ENCOMENDE JÁ 50% OFF
@@ -225,11 +177,11 @@
                     </div>
                 </div>
 
-                <!-- Coluna da Imagem do Produto (Direita) -->
+                <!-- Coluna da Imagem do Produto (Direita) - Atualizada para slimline-pl.png -->
                 <div class="relative w-full lg:w-2/5 flex justify-center lg:justify-end z-10">
-                    <img src="images/slimline-product.png" 
-                         onerror="this.src='https://via.placeholder.com/400x600?text=Slimline+Suplemento'"
-                         class="w-64 md:w-80 lg:w-[450px] object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.4)]" 
+                    <img src="images/slimline-pl.png" 
+                         onerror="this.src='https://via.placeholder.com/500x700?text=Slimline+Suplemento'"
+                         class="w-72 md:w-96 lg:w-[500px] object-contain drop-shadow-[0_45px_45px_rgba(0,0,0,0.3)] hover:scale-105 transition-transform duration-700" 
                          alt="Slimline Product">
                 </div>
 
@@ -237,7 +189,7 @@
         </section>
     </main>
 
-    <!-- Rodapé (Footer) -->
+    <!-- Rodapé -->
     <footer class="bg-black py-20 px-6">
         <div class="max-w-7xl mx-auto text-center">
             <div class="flex flex-wrap justify-center gap-8 mb-12 text-[10px] font-black uppercase text-zinc-500 tracking-[0.3em]">
