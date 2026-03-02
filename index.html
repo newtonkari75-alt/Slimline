@@ -31,10 +31,10 @@
             animation: marquee 30s linear infinite;
         }
 
-        /* Hero: Fundo visível à esquerda, gradiente suave à direita para o texto */
+        /* Hero: Imagem TOTALMENTE visível à esquerda, texto protegido por gradiente suave à direita */
         .hero-background {
             background-image: 
-                linear-gradient(to left, rgba(243, 235, 229, 0.9) 25%, rgba(243, 235, 229, 0.2) 60%, rgba(243, 235, 229, 0) 100%), 
+                linear-gradient(to left, rgba(243, 235, 229, 0.95) 0%, rgba(243, 235, 229, 0.4) 50%, rgba(243, 235, 229, 0) 100%), 
                 url('images/slimsline-fund2.png');
             background-size: cover;
             background-position: center;
@@ -42,18 +42,18 @@
             background-attachment: scroll;
         }
 
-        /* Secção Final: Gradiente à esquerda para o texto, imagem livre à direita */
+        /* Secção Final: Imagem imgi_11_order_bg.jpg visível à direita, texto à esquerda */
         .order-section-bg {
             background-image: 
-                linear-gradient(to right, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.1) 70%, rgba(255, 255, 255, 0) 100%), 
+                linear-gradient(to right, rgba(255, 255, 255, 0.95) 0%, rgba(255, 255, 255, 0.4) 50%, rgba(255, 255, 255, 0) 100%), 
                 url('images/imgi_11_order_bg.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
 
-        /* Formatação de Título conforme imagem 40d764 */
-        .title-main { color: #FFFFFF; filter: drop-shadow(0 4px 6px rgba(0,0,0,0.15)); }
+        /* Formatação de Título conforme imagem original */
+        .title-main { color: #FFFFFF; filter: drop-shadow(0 2px 8px rgba(0,0,0,0.2)); }
         .title-sub { color: #0F172A; }
 
         [x-cloak] { display: none !important; }
@@ -79,20 +79,20 @@
         </div>
     </div>
 
+    <!-- Cabeçalho (Limpo conforme solicitado) -->
     <header class="absolute top-[45px] left-0 right-0 z-[60] py-4">
         <div class="max-w-7xl mx-auto px-6"></div>
     </header>
 
     <main>
-        <!-- Secção 1: Purificação (Hero) - Texto Alinhado à Direita -->
+        <!-- Secção 1: Purificação (Hero) - TEXTO À DIREITA -->
         <section class="hero-background min-h-screen flex items-center pt-32 pb-20">
             <div class="max-w-7xl mx-auto px-6 w-full flex justify-center lg:justify-end">
-                <div class="max-w-2xl text-center lg:text-right">
+                <div class="max-w-xl text-center lg:text-right">
                     
-                    <!-- Formatação Exata: "Slimline" em branco, "isto é purificação" em escuro -->
                     <div class="mb-10">
                         <h1 class="text-7xl md:text-9xl font-serif-display title-main leading-none">Slimline</h1>
-                        <h2 class="text-4xl md:text-6xl font-black font-serif-display title-sub mt-[-15px] md:mt-[-25px]">
+                        <h2 class="text-4xl md:text-6xl font-black font-serif-display title-sub mt-[-10px] md:mt-[-20px]">
                             — isto é purificação
                         </h2>
                     </div>
@@ -101,7 +101,7 @@
                         Nosso suplemento contém os <span class="font-bold">ingredientes desintoxicantes</span> mais potentes. Sua eficácia é <span class="font-bold">20 vezes maior</span> que a de produtos similares encontrados em farmácias.
                     </p>
 
-                    <!-- Benefícios alinhados à direita no Desktop -->
+                    <!-- Lista de Benefícios - Alinhada à direita -->
                     <div class="flex flex-col gap-6 mb-12 items-center lg:items-end">
                         <div class="flex items-center gap-4 lg:flex-row-reverse">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md">
@@ -121,6 +121,12 @@
                             </div>
                             <p class="text-sm md:text-base font-bold">Melhora visivelmente cabelo e unhas</p>
                         </div>
+                        <div class="flex items-center gap-4 lg:flex-row-reverse">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md">
+                                <svg class="w-4 h-4 text-green-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
+                            </div>
+                            <p class="text-sm md:text-base font-bold">Remove toxinas do álcool e nicotina</p>
+                        </div>
                     </div>
 
                     <div class="flex justify-center lg:justify-end">
@@ -132,10 +138,9 @@
             </div>
         </section>
 
-        <!-- Secção 2: Como Encomendar -->
+        <!-- Secção 2: Como Encomendar (RESTAURADA) -->
         <section class="bg-[#E2E8E4] py-24 md:py-32">
             <div class="max-w-7xl mx-auto px-6 text-center">
-                
                 <div class="mb-16 md:mb-24">
                     <h2 class="text-6xl md:text-8xl font-serif-display text-white drop-shadow-sm leading-none">Slimline</h2>
                     <h3 class="text-3xl md:text-5xl font-serif-display text-[#0F172A] mt-[-5px] md:mt-[-10px] uppercase tracking-wider">
@@ -166,14 +171,14 @@
                             <span class="text-4xl md:text-5xl font-serif-display font-bold">3.</span>
                         </div>
                         <p class="text-[#0F172A] text-sm md:text-base leading-relaxed max-w-[250px]">
-                            <span class="font-bold">Receberá a sua encomenda</span> em tempo recorde.
+                            <span class="font-bold">Receberá a sua encomenda</span> com envio imediato.
                         </p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Secção 3: Tripla ajuda para o corpo - Texto à Esquerda, Imagem à Direita -->
+        <!-- Secção 3: Tripla ajuda para o corpo - TEXTO À ESQUERDA, PRODUTO À DIREITA -->
         <section id="order" class="order-section-bg py-24 md:py-32 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12">
                 
@@ -202,24 +207,24 @@
                         </div>
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-md">
-                                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
+                                <svg class="w-5 h-5 text-indigo-600" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                             </div>
                             <p class="font-medium text-sm md:text-base text-[#0F172A]"><span class="font-black">Saúde e juventude</span></p>
                         </div>
                     </div>
 
                     <div class="flex justify-center lg:justify-start">
-                        <a href="https://vjouu.doctorwso.com/l" class="inline-block bg-[#0F172A] hover:bg-black text-white font-black py-5 px-12 rounded-2xl shadow-2xl transition-all transform hover:scale-105 active:scale-95 uppercase tracking-widest text-sm md:text-base">
+                        <a href="https://vjouu.doctorwso.com/l" class="inline-block bg-[#0F172A] hover:bg-black text-white font-black py-5 px-12 rounded-2xl shadow-2xl transition-all transform hover:scale-105 active:scale-95 uppercase tracking-widest text-sm md:text-base text-center">
                             SIM! QUERO O MEU SLIMLINE COM 50% DESCONTO
                         </a>
                     </div>
                 </div>
 
-                <!-- Coluna da Imagem do Produto (Direita) - TAMANHO AJUSTADO PARA 320px -->
+                <!-- Coluna da Imagem do Produto (Direita) - TAMANHO REDUZIDO E PROPORCIONAL -->
                 <div class="relative w-full lg:w-2/5 flex justify-center lg:justify-end z-10">
                     <img src="images/slimline-pl.png" 
                          onerror="this.src='https://via.placeholder.com/400x600?text=Slimline+Product'"
-                         class="w-60 md:w-72 lg:w-[320px] object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.3)] hover:scale-105 transition-transform duration-700" 
+                         class="w-64 md:w-80 lg:w-[350px] object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.3)] hover:scale-105 transition-transform duration-700" 
                          alt="Slimline Product">
                 </div>
 
