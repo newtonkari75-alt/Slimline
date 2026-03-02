@@ -9,6 +9,9 @@
     <meta name="description" content="Slimline® to potężny suplement detoksykujący. Oczyść swój organizm z toksyn i odzyskaj energię. Sprawdź ofertę -50%.">
     <link rel="canonical" href="https://slimline.vercel.app/">
     
+    <!-- Favicon: Imagem do produto -->
+    <link rel="icon" type="image/png" href="images/slimline-pl.png">
+    
     <!-- Styles & Fonts -->
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
@@ -46,19 +49,19 @@
         .order-section-bg {
             background-image: url('images/imgi_11_order_bg.jpg');
             background-size: cover;
-            background-position: 80% center; /* Ajustado para o lado oposto no desktop */
+            background-position: center; 
             background-repeat: no-repeat;
         }
 
         /* Media Query para Mobile */
         @media (max-width: 1023px) {
             .hero-background {
-                /* Ajustado para o lado contrário para mostrar o corpo da modelo no mobile */
-                background-position: 85% center; 
+                /* Ajustado para mostrar o corpo da modelo, movendo um pouco mais para a direita que o original */
+                background-position: 30% center; 
             }
             .order-section-bg {
-                /* Ajustado para o lado contrário no mobile */
-                background-position: 85% center;
+                /* Ajustado para alinhar a foto lateral no mobile */
+                background-position: 30% center;
             }
         }
 
@@ -167,7 +170,7 @@
                         </div>
                         <p class="text-[#0F172A] text-sm md:text-base leading-relaxed max-w-[250px]">
                             <span class="font-bold">Wypełnij formularz zamówienia.</span><br>
-                            Twoje dane osobowe są bezpieczne.
+                            Twoje dane osobowe são bezpieczne.
                         </p>
                     </div>
                     <div class="flex flex-col items-center">
@@ -175,7 +178,7 @@
                             <span class="text-4xl md:text-5xl font-serif-display font-bold">2.</span>
                         </div>
                         <p class="text-[#0F172A] text-sm md:text-base leading-relaxed max-w-[250px]">
-                            Odbierz telefon od nosso konsultanta i <span class="font-bold">potwierdź zamówienie</span>.
+                            Odbierz telefon od naszego konsultanta i <span class="font-bold">potwierdź zamówienie</span>.
                         </p>
                     </div>
                     <div class="flex flex-col items-center">
@@ -227,7 +230,7 @@
                         </div>
                     </div>
 
-                    <!-- Foto do Produto (Centralizada no fluxo, ANTES do botão) -->
+                    <!-- Foto do Produto (ANTES do botão) -->
                     <div class="mb-10 w-full flex justify-center lg:justify-start">
                         <img src="images/slimline-pl.png" 
                              onerror="this.src='https://via.placeholder.com/300x400?text=Slimline+Polska'"
@@ -244,7 +247,7 @@
                     </div>
                 </div>
 
-                <!-- Espaço lateral no Desktop para equilíbrio visual -->
+                <!-- Espaço lateral no Desktop -->
                 <div class="hidden lg:block lg:w-1/4"></div>
 
             </div>
