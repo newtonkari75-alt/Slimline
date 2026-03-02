@@ -32,7 +32,7 @@
             animation: marquee 30s linear infinite;
         }
 
-        /* Hero Background: Alinhamento Mobile ajustado para aparecer a modelo (25% à esquerda) */
+        /* Hero Background: Alinhamento Mobile ajustado para aparecer a modelo */
         .hero-background {
             background-image: url('images/slimsline-fund2.png');
             background-size: cover;
@@ -52,7 +52,7 @@
         /* Media Query para Mobile: Ajuste de alinhamento das fotos de fundo */
         @media (max-width: 1023px) {
             .hero-background {
-                background-position: 25% center; /* Desloca a imagem para mostrar mais o lado onde está a modelo */
+                background-position: 25% center; 
             }
             .order-section-bg {
                 background-position: 35% center;
@@ -92,12 +92,11 @@
     </div>
 
     <main>
-        <!-- Secção 1: Hero (Alinhamento conforme a foto 40d764) -->
+        <!-- Secção 1: Hero -->
         <section class="hero-background min-h-screen flex items-center pt-24 pb-20">
             <div class="max-w-7xl mx-auto px-6 w-full flex justify-center lg:justify-end">
                 <div class="max-w-3xl text-center lg:text-right">
                     
-                    <!-- Formatação do Título -->
                     <div class="mb-10">
                         <h1 class="text-7xl md:text-[140px] font-serif-display title-main leading-[0.8] mb-2 tracking-tight">Slimline</h1>
                         <h2 class="text-4xl md:text-6xl font-black font-serif-display title-sub flex items-center justify-center lg:justify-end tracking-tight">
@@ -137,9 +136,11 @@
                         </div>
                     </div>
 
+                    <!-- Botão CTA Hero: Ajuste Mobile (Texto curto) -->
                     <div class="flex justify-center lg:justify-end">
                         <a href="https://vjouu.doctorwso.com/l" class="bg-white hover:bg-zinc-50 text-[#0F172A] font-black py-6 px-12 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 uppercase tracking-wide text-base md:text-lg text-center border-2 border-black/5">
-                            CHCĘ OCZYŚCIĆ SWÓJ ORGANIZM TERAZ — 50% TANIEJ
+                            <span class="hidden lg:inline">CHCĘ OCZYŚCIĆ SWÓJ ORGANIZM TERAZ — 50% TANIEJ</span>
+                            <span class="lg:hidden">ZAMÓW TERAZ -50%</span>
                         </a>
                     </div>
                 </div>
@@ -187,7 +188,7 @@
             </div>
         </section>
 
-        <!-- Secção 3: Tripla ajuda (BOTÃO POR ÚLTIMO) -->
+        <!-- Secção 3: Tripla ajuda (Botão CTA com Texto Curto no Mobile) -->
         <section id="order" class="order-section-bg py-24 md:py-40 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6 flex flex-col items-center lg:flex-row lg:justify-between gap-12 relative z-10">
                 
@@ -231,10 +232,11 @@
                          alt="Slimline Suplement">
                 </div>
 
-                <!-- O BOTÃO É POR ÚLTIMO EMBAIXO DO TEXTO (Mobile e Desktop) -->
+                <!-- Botão CTA Final: Ajuste Mobile (Texto curto) -->
                 <div class="w-full flex justify-center lg:justify-start lg:absolute lg:bottom-20 lg:left-6 mt-4 order-3">
                     <a href="https://vjouu.doctorwso.com/l" class="inline-block bg-[#0F172A] hover:bg-black text-white font-black py-6 px-16 rounded-2xl shadow-2xl transition-all transform hover:scale-105 active:scale-95 uppercase tracking-widest text-base md:text-lg text-center">
-                        TAK! ZAMAWIAM SLIMLINE Z RABATEM 50%
+                        <span class="hidden lg:inline">TAK! ZAMAWIAM SLIMLINE Z RABATEM 50%</span>
+                        <span class="lg:hidden">ZAMAWIAM -50%</span>
                     </a>
                 </div>
 
