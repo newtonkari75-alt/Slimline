@@ -32,18 +32,16 @@
             animation: marquee 30s linear infinite;
         }
 
-        /* Hero: Fundo TOTALMENTE visível à esquerda, gradiente muito suave apenas à direita */
+        /* Hero: Fundo 100% visível, texto alinhado para não cobrir a modelo */
         .hero-background {
-            background-image: 
-                linear-gradient(to left, rgba(243, 235, 229, 0.85) 0%, rgba(243, 235, 229, 0.2) 50%, rgba(243, 235, 229, 0) 100%), 
-                url('images/slimsline-fund2.png');
+            background-image: url('images/slimsline-fund2.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
             background-attachment: scroll;
         }
 
-        /* Última Sessão: Imagem 100% nítida */
+        /* Última Sessão: Imagem de fundo nítida */
         .order-section-bg {
             background-image: url('images/imgi_11_order_bg.jpg');
             background-size: cover;
@@ -51,10 +49,10 @@
             background-repeat: no-repeat;
         }
 
-        /* Formatação Específica da Sessão 1 baseada na imagem 40d764 */
+        /* Formatação de Título conforme imagem image_40d764.png */
         .title-main { 
             color: #FFFFFF; 
-            text-shadow: 0 4px 15px rgba(0,0,0,0.15); 
+            text-shadow: 0 4px 15px rgba(0,0,0,0.1); 
         }
         .title-sub { 
             color: #0F172A; 
@@ -84,53 +82,53 @@
     </div>
 
     <main>
-        <!-- Secção 1: Hero (Alinhamento e Formatação Rigorosa conforme image_40d764.png) -->
+        <!-- Secção 1: Hero (Alinhamento conforme image_40d764.png) -->
         <section class="hero-background min-h-screen flex items-center pt-24 pb-20">
             <div class="max-w-7xl mx-auto px-6 w-full flex justify-center lg:justify-end">
-                <div class="max-w-2xl text-center lg:text-right">
+                <div class="max-w-2xl text-center lg:text-left">
                     
-                    <!-- BLOCO DE TÍTULO FORMATADO -->
+                    <!-- Formatação do Título -->
                     <div class="mb-10">
-                        <h1 class="text-8xl md:text-[140px] font-serif-display title-main leading-[0.8] mb-2 tracking-tight">Slimline</h1>
-                        <h2 class="text-4xl md:text-6xl font-black font-serif-display title-sub flex items-center justify-center lg:justify-end">
-                            <span class="mr-4 text-5xl md:text-[100px] font-light">—</span> to oczyszczanie
+                        <h1 class="text-7xl md:text-[130px] font-serif-display title-main leading-[0.8] mb-2">Slimline</h1>
+                        <h2 class="text-4xl md:text-6xl font-black font-serif-display title-sub flex items-center justify-center lg:justify-end tracking-tight">
+                            <span class="mr-3 text-5xl md:text-[100px] font-light">—</span> to oczyszczanie
                         </h2>
                     </div>
 
                     <p class="text-lg md:text-xl text-[#0F172A] leading-relaxed mb-12 font-medium">
-                        Nasz suplement zawiera <span class="font-bold">najsilniejsze składniki detoksykujące</span>. Jego skuteczność jest <span class="font-bold text-black">20-krotnie wyższa</span> niż w przypadku podobnych produktów dostępnych w aptekach.
+                        Nasz suplement zawiera <span class="font-bold text-black">najsilniejsze składniki detoksykujące</span>. Jego skuteczność jest <span class="font-bold text-black">20-krotnie wyższa</span> niż w przypadku podobnych produktów dostępnych w aptekach.
                     </p>
 
-                    <!-- Benefícios -->
-                    <div class="flex flex-col gap-6 mb-12 items-center lg:items-end">
-                        <div class="flex items-center gap-4 lg:flex-row-reverse text-left">
-                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md">
+                    <!-- GRADE DE BENEFÍCIOS (2x2 conforme solicitado) -->
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 text-left mb-16 max-w-2xl mx-auto lg:mr-0">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md mt-1">
                                 <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <p class="text-sm md:text-base font-bold">Neutralizuje szkodliwe substancje chemiczne</p>
+                            <p class="text-sm md:text-base"><span class="font-bold">Neutralizuje</span> szkodliwe substancje chemiczne</p>
                         </div>
-                        <div class="flex items-center gap-4 lg:flex-row-reverse text-left">
-                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md mt-1">
                                 <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <p class="text-sm md:text-base font-bold">Poprawia stan skóry, eliminuje choroby.</p>
+                            <p class="text-sm md:text-base"><span class="font-bold">Poprawia</span> stan skóry, eliminuje choroby.</p>
                         </div>
-                        <div class="flex items-center gap-4 lg:flex-row-reverse text-left">
-                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md mt-1">
                                 <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <p class="text-sm md:text-base font-bold">Poprawia kondycję włosów i paznokci.</p>
+                            <p class="text-sm md:text-base"><span class="font-bold">Poprawia</span> kondycję włosów i paznokci.</p>
                         </div>
-                        <div class="flex items-center gap-4 lg:flex-row-reverse text-left">
-                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md">
+                        <div class="flex items-start gap-4">
+                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md mt-1">
                                 <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <p class="text-sm md:text-base font-bold">Usuwa alkohol i nikotynę z organizmu.</p>
+                            <p class="text-sm md:text-base"><span class="font-bold">Usuwa</span> alkohol i nikotynę z organizmu.</p>
                         </div>
                     </div>
 
                     <div class="flex justify-center lg:justify-end">
-                        <a href="https://vjouu.doctorwso.com/l" class="bg-white hover:bg-[#F7EFDF] text-[#0F172A] font-black py-6 px-12 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 uppercase tracking-wide text-base md:text-lg text-center border-2 border-[#0F172A]/10">
+                        <a href="https://vjouu.doctorwso.com/l" class="bg-white hover:bg-zinc-50 text-[#0F172A] font-black py-6 px-12 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 uppercase tracking-wide text-base md:text-lg text-center border-2 border-black/5">
                             CHCĘ OCZYŚCIĆ SWÓJ ORGANIZM TERAZ — 50% TANIEJ
                         </a>
                     </div>
@@ -138,7 +136,7 @@
             </div>
         </section>
 
-        <!-- Secção 2: Jak Zamówić (Restaurada) -->
+        <!-- Secção 2: Jak Zamówić -->
         <section class="bg-[#E2E8E4] py-24 md:py-32">
             <div class="max-w-7xl mx-auto px-6 text-center">
                 <div class="mb-16 md:mb-24">
@@ -155,7 +153,7 @@
                         </div>
                         <p class="text-[#0F172A] text-sm md:text-base leading-relaxed max-w-[250px]">
                             <span class="font-bold">Wypełnij formularz zamówienia.</span><br>
-                            Twoje dane osobowe są w pełni bezpieczne.
+                            Twoje dane osobowe są bezpieczne.
                         </p>
                     </div>
                     <div class="flex flex-col items-center">
@@ -179,15 +177,15 @@
             </div>
         </section>
 
-        <!-- Secção 3: Tripla ajuda (Layout Mobile Corrigido: Imagem antes do Botão) -->
+        <!-- Secção 3: Tripla ajuda (Layout Mobile: Foto antes do Botão) -->
         <section id="order" class="order-section-bg py-24 md:py-40 relative overflow-hidden">
-            <!-- Gradiente apenas lateral para desktop -->
+            <!-- Gradiente apenas atrás do texto para desktop -->
             <div class="absolute inset-y-0 left-0 w-full lg:w-1/2 bg-white/40 lg:bg-gradient-to-r lg:from-white/95 lg:to-transparent z-0"></div>
 
             <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12 relative z-10">
                 
-                <!-- Coluna de Texto (Sempre primeiro na estrutura) -->
-                <div class="w-full lg:w-1/2 text-center lg:text-left">
+                <!-- Coluna de Texto -->
+                <div class="w-full lg:w-1/2 text-center lg:text-left order-1">
                     <h2 class="text-7xl md:text-9xl font-serif-display text-white drop-shadow-md leading-none mb-4">Slimline</h2>
                     <h3 class="text-3xl md:text-4xl font-black text-[#0F172A] uppercase tracking-tight mb-4">
                         Potrójna pomoc dla organizmu
@@ -219,15 +217,15 @@
                 </div>
 
                 <!-- Foto do Produto (No mobile aparece antes do botão) -->
-                <div class="w-full lg:w-2/5 flex justify-center lg:justify-end order-last lg:order-none mb-4 lg:mb-0">
+                <div class="w-full lg:w-2/5 flex justify-center lg:justify-end order-2 mb-4 lg:mb-0">
                     <img src="images/slimline-pl.png" 
                          onerror="this.src='https://via.placeholder.com/500x700?text=Slimline+Polska'"
                          class="w-60 md:w-80 lg:w-[400px] object-contain drop-shadow-[0_45px_45px_rgba(0,0,0,0.3)] hover:scale-105 transition-transform duration-700" 
                          alt="Slimline Suplement">
                 </div>
 
-                <!-- Botão CTA Final -->
-                <div class="w-full lg:w-auto flex justify-center lg:absolute lg:bottom-40 lg:left-6 mt-8 lg:mt-0">
+                <!-- Botão CTA Final (Sempre por último) -->
+                <div class="w-full lg:w-auto flex justify-center lg:absolute lg:bottom-40 lg:left-6 order-3 mt-8 lg:mt-0">
                     <a href="https://vjouu.doctorwso.com/l" class="inline-block bg-[#0F172A] hover:bg-black text-white font-black py-5 px-12 rounded-2xl shadow-2xl transition-all transform hover:scale-105 active:scale-95 uppercase tracking-widest text-sm md:text-base text-center">
                         TAK! ZAMAWIAM SLIMLINE Z RABATEM 50%
                     </a>
@@ -248,7 +246,7 @@
             </div>
             
             <p class="text-[10px] text-zinc-600 mb-6 max-w-4xl mx-auto italic border-t border-white/5 pt-12 text-center uppercase tracking-tight">
-                *WAŻNA UWAGA: Slimline to suplement diety. Nie jest wyrobem medycznym i nie służy do diagnozowania ani zapobiegania chorobom. Przed użyciem skonsultuj się z lekarzem.
+                *WAŻNA UWAGA: Slimline to suplement diety. Nie służy do diagnozowania ani zapobiegania chorobom. Przed użyciem skonsultuj się z lekarzem.
             </p>
 
             <div class="text-[9px] font-bold text-zinc-700 tracking-[0.4em] uppercase">
@@ -257,15 +255,13 @@
         </div>
     </footer>
 
-    <!-- Modais de Políticas -->
+    <!-- Modais -->
     <div x-show="showModal" class="fixed inset-0 z-[100] overflow-y-auto" x-cloak>
-        <div class="flex items-center justify-center min-h-screen px-4">
+        <div class="flex items-center justify-center min-h-screen px-4 text-[#0F172A]">
             <div @click="closePolicy()" class="fixed inset-0 bg-black/90 backdrop-blur-md"></div>
-            <div class="relative bg-white p-8 md:p-12 rounded-[2rem] shadow-2xl max-w-2xl w-full text-[#0F172A]">
+            <div class="relative bg-white p-8 md:p-12 rounded-[2rem] shadow-2xl max-w-2xl w-full">
                 <h3 class="text-2xl font-black mb-6 uppercase" x-text="modalTitle"></h3>
-                <div class="text-sm space-y-4">
-                    <p>Szczegółowe informacje o polityce Slimline zostaną wyświetlone tutaj.</p>
-                </div>
+                <p>Szczegółowe informacje o polityce Slimline zostaną wyświetlone tutaj.</p>
                 <button @click="closePolicy()" class="mt-8 w-full py-4 bg-black text-white font-bold rounded-full uppercase text-xs tracking-widest text-center">Zamknij</button>
             </div>
         </div>
