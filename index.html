@@ -53,7 +53,8 @@
         /* Media Query para Mobile */
         @media (max-width: 1023px) {
             .hero-background {
-                background-position: center center; 
+                /* Ajustado para mostrar metade do corpo da modelo no mobile */
+                background-position: 15% center; 
             }
             .order-section-bg {
                 background-position: 35% center;
@@ -225,16 +226,16 @@
                         </div>
                     </div>
 
-                    <!-- Foto do Produto (ANTES do botão no Mobile e Desktop) -->
-                    <div class="mb-10 lg:hidden">
+                    <!-- Foto do Produto (Centralizada no fluxo, ANTES do botão) -->
+                    <div class="mb-10 w-full flex justify-center lg:justify-start">
                         <img src="images/slimline-pl.png" 
                              onerror="this.src='https://via.placeholder.com/300x400?text=Slimline+Polska'"
-                             class="w-48 mx-auto drop-shadow-2xl" 
+                             class="w-48 md:w-56 drop-shadow-2xl hover:scale-105 transition-transform" 
                              alt="Slimline Suplement">
                     </div>
 
                     <!-- Botão CTA Final -->
-                    <div>
+                    <div class="w-full flex justify-center lg:justify-start">
                         <a href="https://vjouu.doctorwso.com/l" class="inline-block bg-[#0F172A] hover:bg-black text-white font-black py-6 px-16 rounded-2xl shadow-2xl transition-all transform hover:scale-105 active:scale-95 uppercase tracking-widest text-base md:text-lg text-center">
                             <span class="hidden lg:inline">TAK! ZAMAWIAM SLIMLINE Z RABATEM 50%</span>
                             <span class="lg:hidden">ZAMAWIAM -50%</span>
@@ -242,13 +243,8 @@
                     </div>
                 </div>
 
-                <!-- Foto do Produto (Desktop lateral, mantendo o equilíbrio visual) -->
-                <div class="hidden lg:flex w-full lg:w-2/5 justify-end">
-                    <img src="images/slimline-pl.png" 
-                         onerror="this.src='https://via.placeholder.com/500x700?text=Slimline+Polska'"
-                         class="w-[400px] object-contain drop-shadow-[0_45px_45px_rgba(0,0,0,0.3)] hover:scale-105 transition-transform duration-700" 
-                         alt="Slimline Suplement">
-                </div>
+                <!-- Espaço lateral no Desktop para equilíbrio visual -->
+                <div class="hidden lg:block lg:w-1/4"></div>
 
             </div>
         </section>
