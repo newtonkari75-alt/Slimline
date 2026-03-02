@@ -32,15 +32,18 @@
             animation: marquee 30s linear infinite;
         }
 
+        /* Garantindo que a imagem de fundo apareça na Secção 1 */
         .hero-background {
-            background-image: linear-gradient(rgba(243, 235, 229, 0.85), rgba(243, 235, 229, 0.85)), url('images/slimsline-fund.png');
+            background-image: linear-gradient(rgba(243, 235, 229, 0.75), rgba(243, 235, 229, 0.75)), url('images/slimsline-fund.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
+            background-attachment: scroll;
         }
 
+        /* Garantindo que a imagem de fundo apareça na Secção 3 */
         .order-section-bg {
-            background-image: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.4)), url('images/imgi_11_order_bg.jpg');
+            background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('images/imgi_11_order_bg.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -75,6 +78,9 @@
             <div class="flex items-center">
                 <span class="text-[#0F172A] font-black text-2xl tracking-tighter uppercase">SLIMLINE</span>
             </div>
+            <a href="https://vjouu.doctorwso.com/l" class="bg-[#F7EFDF] text-black px-6 py-2 rounded-full text-xs font-bold uppercase tracking-wider hover:bg-white transition-all shadow-xl active:scale-95 border border-black/10">
+                Ver Ofertas
+            </a>
         </div>
     </header>
 
@@ -84,13 +90,13 @@
             <div class="max-w-4xl mx-auto px-6 text-center">
                 
                 <div class="mb-10">
-                    <h1 class="text-7xl md:text-9xl font-serif-display text-white drop-shadow-sm leading-none">Slimline</h1>
-                    <h2 class="text-4xl md:text-6xl font-bold font-serif-display text-[#0F172A] mt-[-10px] md:mt-[-20px]">
+                    <h1 class="text-7xl md:text-9xl font-serif-display text-white drop-shadow-lg leading-none">Slimline</h1>
+                    <h2 class="text-4xl md:text-6xl font-bold font-serif-display text-[#0F172A] mt-[-10px] md:mt-[-20px] drop-shadow-sm">
                         — isto é purificação
                     </h2>
                 </div>
 
-                <p class="text-lg md:text-xl text-[#0F172A] max-w-2xl mx-auto leading-relaxed mb-16">
+                <p class="text-lg md:text-xl text-[#0F172A] max-w-2xl mx-auto leading-relaxed mb-16 bg-white/20 backdrop-blur-sm p-4 rounded-2xl">
                     Nosso suplemento contém os <span class="font-bold">ingredientes desintoxicantes</span> mais potentes. Sua eficácia é <span class="font-bold">20 vezes maior</span> que a de produtos similares encontrados em farmácias.
                 </p>
 
@@ -99,30 +105,30 @@
                         <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm mt-1">
                             <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
                         </div>
-                        <p class="text-sm md:text-base"><span class="font-bold">Neutraliza</span> substâncias químicas nocivas</p>
+                        <p class="text-sm md:text-base font-medium"><span class="font-bold">Neutraliza</span> substâncias químicas nocivas</p>
                     </div>
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm mt-1">
                             <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
                         </div>
-                        <p class="text-sm md:text-base"><span class="font-bold">Melhora</span> a condição da pele, elimina diversas doenças.</p>
+                        <p class="text-sm md:text-base font-medium"><span class="font-bold">Melhora</span> a condição da pele, elimina diversas doenças.</p>
                     </div>
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm mt-1">
                             <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
                         </div>
-                        <p class="text-sm md:text-base"><span class="font-bold">Melhora</span> a condição do cabelo e das unhas.</p>
+                        <p class="text-sm md:text-base font-medium"><span class="font-bold">Melhora</span> a condição do cabelo e das unhas.</p>
                     </div>
                     <div class="flex items-start gap-4">
                         <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-sm mt-1">
                             <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="3"><path d="M5 13l4 4L19 7"></path></svg>
                         </div>
-                        <p class="text-sm md:text-base"><span class="font-bold">Remove</span> o álcool e a nicotina do corpo.</p>
+                        <p class="text-sm md:text-base font-medium"><span class="font-bold">Remove</span> o álcool e a nicotina do corpo.</p>
                     </div>
                 </div>
 
                 <div class="flex justify-center">
-                    <a href="#order" class="bg-white hover:bg-zinc-50 text-[#0F172A] font-bold py-5 px-10 rounded-full shadow-xl transition-all hover:scale-105 active:scale-95 uppercase tracking-wide text-sm md:text-base text-center">
+                    <a href="https://vjouu.doctorwso.com/l" class="bg-white hover:bg-[#F7EFDF] text-[#0F172A] font-black py-5 px-10 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 uppercase tracking-wide text-sm md:text-base text-center">
                         SUBMETA-SE À TERAPIA DE LIMPEZA (50% OFF)
                     </a>
                 </div>
@@ -175,7 +181,7 @@
             </div>
         </section>
 
-        <!-- Secção 3: Tripla ajuda para o corpo (Conforme imagem 40cc41) -->
+        <!-- Secção 3: Tripla ajuda para o corpo -->
         <section id="order" class="order-section-bg py-24 md:py-32 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12">
                 
@@ -214,23 +220,24 @@
 
                 <!-- Imagem do Produto (Centro) -->
                 <div class="relative w-full lg:w-1/3 flex justify-center z-10">
-                    <img src="https://via.placeholder.com/400x600?text=HelpVit+Slimline" 
-                         onerror="this.src='images/slimline-product.png'"
-                         class="w-64 md:w-80 object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.3)]" 
+                    <!-- Referência à imagem do produto na pasta images -->
+                    <img src="images/slimline-product.png" 
+                         onerror="this.src='https://via.placeholder.com/400x600?text=Slimline+Suplemento'"
+                         class="w-64 md:w-80 object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.4)]" 
                          alt="Slimline Product">
                 </div>
 
-                <!-- Botão CTA (Substituindo o Formulário) -->
+                <!-- Botão CTA (Card de Oferta) -->
                 <div class="w-full lg:w-1/4 flex flex-col items-center lg:items-end z-10">
-                    <div class="bg-white/90 backdrop-blur-md p-10 rounded-[2.5rem] shadow-2xl flex flex-col items-center gap-6 w-full max-w-[320px]">
+                    <div class="bg-white/90 backdrop-blur-md p-10 rounded-[2.5rem] shadow-2xl flex flex-col items-center gap-6 w-full max-w-[320px] border border-black/5">
                         <h4 class="text-xl font-serif-display font-bold uppercase text-center text-[#0F172A]">Peça Agora</h4>
                         <div class="text-center">
                             <span class="block text-4xl font-black text-red-600">50% OFF</span>
                             <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Desconto de Lançamento</span>
                         </div>
-                        <button class="w-full bg-[#0F172A] hover:bg-black text-white font-black py-5 rounded-2xl shadow-lg transition-all transform hover:scale-105 active:scale-95 uppercase tracking-widest text-sm">
+                        <a href="https://vjouu.doctorwso.com/l" class="w-full bg-[#0F172A] hover:bg-black text-white font-black py-5 rounded-2xl shadow-lg transition-all transform hover:scale-105 active:scale-95 uppercase tracking-widest text-sm text-center block">
                             ENCOMENDE JÁ
-                        </button>
+                        </a>
                         <p class="text-[9px] font-bold text-slate-400 uppercase tracking-tighter text-center">
                             Aproveite o Envio Imediato
                         </p>
