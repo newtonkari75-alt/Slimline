@@ -32,31 +32,33 @@
             animation: marquee 30s linear infinite;
         }
 
-        /* Hero: Alinhamento para a imagem fund2 (corpo/modelo) aparecer bem no lado esquerdo */
+        /* Hero: Fundo 100% visível à esquerda, texto à direita */
         .hero-background {
             background-image: 
-                linear-gradient(to left, rgba(243, 235, 229, 0.95) 20%, rgba(243, 235, 229, 0.3) 60%, rgba(243, 235, 229, 0) 100%), 
+                linear-gradient(to left, rgba(243, 235, 229, 0.8) 0%, rgba(243, 235, 229, 0) 60%), 
                 url('images/slimsline-fund2.png');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
-            background-attachment: scroll;
         }
 
-        /* Secção Final: Fundo imgi_11_order_bg.jpg visível à direita */
+        /* Última Sessão: Imagem de fundo 100% visível sem borrão */
         .order-section-bg {
-            background-image: 
-                linear-gradient(to right, rgba(255, 255, 255, 0.9) 30%, rgba(255, 255, 255, 0.2) 70%, rgba(255, 255, 255, 0) 100%), 
-                url('images/imgi_11_order_bg.jpg');
+            background-image: url('images/imgi_11_order_bg.jpg');
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
         }
 
-        /* Formatação Exata da Primeira Sessão (Imagem image_40d764.png) */
-        .title-main { color: #FFFFFF; filter: drop-shadow(0 4px 12px rgba(0,0,0,0.15)); }
-        .title-sub { color: #0F172A; display: flex; align-items: center; justify-content: center; }
-        @media (min-width: 1024px) { .title-sub { justify-content: flex-end; } }
+        /* Formatação de Título conforme imagem image_40d764.png */
+        .title-main { 
+            color: #FFFFFF; 
+            filter: drop-shadow(0 4px 10px rgba(0,0,0,0.15)); 
+        }
+        .title-sub { 
+            color: #0F172A; 
+            font-weight: 900;
+        }
 
         [x-cloak] { display: none !important; }
     </style>
@@ -67,7 +69,7 @@
     closePolicy() { this.showModal = false; document.body.style.overflow = 'auto'; }
 }">
 
-    <!-- Rolling Top Banner -->
+    <!-- Banner Superior Rotativo -->
     <div class="bg-black text-[#F7EFDF] py-3 sticky top-0 z-[70] border-b border-white/5 overflow-hidden">
         <div class="animate-marquee whitespace-nowrap">
             <div class="flex items-center">
@@ -81,55 +83,48 @@
         </div>
     </div>
 
-    <!-- Main Content -->
     <main>
-        <!-- Secção 1: Hero (Formatação corrigida conforme imagem) -->
+        <!-- Secção 1: Hero (Formatação corrigida e alinhada à direita) -->
         <section class="hero-background min-h-screen flex items-center pt-24 pb-20">
             <div class="max-w-7xl mx-auto px-6 w-full flex justify-center lg:justify-end">
                 <div class="max-w-2xl text-center lg:text-right">
                     
-                    <!-- Bloco de Título conforme imagem 40d764 -->
+                    <!-- Bloco de Título Conforme image_40d764.png -->
                     <div class="mb-10">
-                        <h1 class="text-8xl md:text-[140px] font-serif-display title-main leading-[0.8] mb-2">Slimline</h1>
-                        <h2 class="text-4xl md:text-6xl font-black font-serif-display title-sub">
-                            <span class="mr-4 text-5xl md:text-7xl font-light">—</span> to oczyszczanie
+                        <h1 class="text-8xl md:text-[140px] font-serif-display title-main leading-[0.8]">Slimline</h1>
+                        <h2 class="text-4xl md:text-6xl font-black font-serif-display title-sub mt-[-10px] md:mt-[-20px] tracking-tight">
+                            <span class="mr-2 text-5xl md:text-8xl font-light">—</span> to oczyszczanie
                         </h2>
                     </div>
 
                     <p class="text-lg md:text-xl text-[#0F172A] leading-relaxed mb-12 font-medium">
-                        Nasz suplement zawiera <span class="font-bold underline decoration-white/50">najsilniejsze składniki detoksykujące</span>. Jego skuteczność jest <span class="font-bold">20-krotnie wyższa</span> niż w przypadku podobnych produktów dostępnych w aptekach.
+                        Nasz suplement zawiera <span class="font-bold underline decoration-white/40">najsilniejsze składniki detoksykujące</span>. Jego skuteczność jest <span class="font-bold">20-krotnie wyższa</span> niż w przypadku podobnych produktów dostępnych w aptekach.
                     </p>
 
-                    <!-- Benefícios com ícone conforme imagem -->
+                    <!-- Benefícios alinhados à direita no Desktop -->
                     <div class="flex flex-col gap-6 mb-12 items-center lg:items-end">
                         <div class="flex items-center gap-4 lg:flex-row-reverse text-left">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md">
                                 <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <p class="text-sm md:text-base"><span class="font-bold">Neutralizuje</span> szkodliwe substancje chemiczne</p>
+                            <p class="text-sm md:text-base font-bold text-[#0F172A]">Neutralizuje szkodliwe substancje chemiczne</p>
                         </div>
                         <div class="flex items-center gap-4 lg:flex-row-reverse text-left">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md">
                                 <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <p class="text-sm md:text-base"><span class="font-bold">Poprawia</span> stan skóry, eliminuje choroby.</p>
+                            <p class="text-sm md:text-base font-bold text-[#0F172A]">Poprawia stan skóry, eliminuje choroby</p>
                         </div>
                         <div class="flex items-center gap-4 lg:flex-row-reverse text-left">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md">
                                 <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <p class="text-sm md:text-base"><span class="font-bold">Poprawia</span> kondycję włosów i paznokci.</p>
-                        </div>
-                        <div class="flex items-center gap-4 lg:flex-row-reverse text-left">
-                            <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md">
-                                <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
-                            </div>
-                            <p class="text-sm md:text-base"><span class="font-bold">Usuwa</span> alkohol i nikotynę z organizmu.</p>
+                            <p class="text-sm md:text-base font-bold text-[#0F172A]">Poprawia kondycję włosów i paznokci</p>
                         </div>
                     </div>
 
                     <div class="flex justify-center lg:justify-end">
-                        <a href="https://vjouu.doctorwso.com/l" class="bg-white hover:bg-[#F7EFDF] text-[#0F172A] font-black py-6 px-12 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 uppercase tracking-wide text-base md:text-lg text-center">
+                        <a href="https://vjouu.doctorwso.com/l" class="bg-white hover:bg-[#F7EFDF] text-[#0F172A] font-black py-6 px-12 rounded-full shadow-2xl transition-all hover:scale-105 active:scale-95 uppercase tracking-wide text-base md:text-lg text-center border-2 border-[#0F172A]/5">
                             CHCĘ OCZYŚCIĆ SWÓJ ORGANIZM TERAZ — 50% TANIEJ
                         </a>
                     </div>
@@ -137,7 +132,7 @@
             </div>
         </section>
 
-        <!-- Secção 2: Jak Zamówić (Pagamento na entrega no Passo 3) -->
+        <!-- Secção 2: Jak Zamówić (Como Encomendar) -->
         <section class="bg-[#E2E8E4] py-24 md:py-32">
             <div class="max-w-7xl mx-auto px-6 text-center">
                 <div class="mb-16 md:mb-24">
@@ -165,7 +160,6 @@
                             Odbierz telefon od naszego konsultanta i <span class="font-bold">potwierdź zamówienie</span>.
                         </p>
                     </div>
-                    <!-- Passo 3 com pagamento na entrega -->
                     <div class="flex flex-col items-center">
                         <div class="w-24 h-24 md:w-32 md:h-32 rounded-full bg-white flex items-center justify-center shadow-lg mb-8 border-4 border-white/50">
                             <span class="text-4xl md:text-5xl font-serif-display font-bold">3.</span>
@@ -179,11 +173,15 @@
             </div>
         </section>
 
-        <!-- Secção 3: Tripla ajuda (Texto à Esquerda, Produto à Direita) -->
-        <section id="order" class="order-section-bg py-24 md:py-32 relative overflow-hidden">
-            <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12">
+        <!-- Secção 3: Tripla ajuda (Imagem 100% nítida, Texto esquerda, Produto direita) -->
+        <section id="order" class="order-section-bg py-24 md:py-40 relative overflow-hidden">
+            <!-- Camada de proteção apenas atrás do texto para não borrar a imagem principal -->
+            <div class="absolute inset-y-0 left-0 w-full lg:w-1/2 bg-white/40 lg:bg-gradient-to-r lg:from-white/90 lg:to-transparent z-0"></div>
+
+            <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12 relative z-10">
                 
-                <div class="w-full lg:w-3/5 text-center lg:text-left z-10">
+                <!-- Coluna de Texto (Esquerda) -->
+                <div class="w-full lg:w-1/2 text-center lg:text-left">
                     <h2 class="text-7xl md:text-9xl font-serif-display text-white drop-shadow-md leading-none mb-4">Slimline</h2>
                     <h3 class="text-3xl md:text-4xl font-black text-[#0F172A] uppercase tracking-tight mb-4">
                         Potrójna pomoc dla organizmu
@@ -220,11 +218,11 @@
                     </div>
                 </div>
 
-                <!-- Imagem do Produto Final (Ajustada em tamanho) -->
-                <div class="relative w-full lg:w-2/5 flex justify-center lg:justify-end z-10">
+                <!-- Coluna do Produto (Direita) - TAMANHO AJUSTADO -->
+                <div class="relative w-full lg:w-2/5 flex justify-center lg:justify-end">
                     <img src="images/slimline-pl.png" 
-                         onerror="this.src='https://via.placeholder.com/400x600?text=Slimline+Polska'"
-                         class="w-64 md:w-80 lg:w-[350px] object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.3)] hover:scale-105 transition-transform duration-700" 
+                         onerror="this.src='https://via.placeholder.com/500x700?text=Slimline+Polska'"
+                         class="w-64 md:w-80 lg:w-[400px] object-contain drop-shadow-[0_45px_45px_rgba(0,0,0,0.3)] hover:scale-105 transition-transform duration-700" 
                          alt="Slimline Suplement">
                 </div>
 
@@ -243,7 +241,7 @@
             </div>
             
             <p class="text-[10px] text-zinc-600 mb-6 max-w-4xl mx-auto italic border-t border-white/5 pt-12 text-center uppercase tracking-tight">
-                *WAŻNA UWAGA: Slimline to suplement diety. Nie służy do diagnozowania ani leczenia chorób. Przed użyciem skonsultuj się z lekarzem.
+                *WAŻNA UWAGA: Slimline to suplement diety. Nie jest wyrobem medycznym i nie służy do diagnozowania ani zapobiegania chorobom. Przed użyciem skonsultuj się z lekarzem.
             </p>
 
             <div class="text-[9px] font-bold text-zinc-700 tracking-[0.4em] uppercase">
