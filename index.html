@@ -49,19 +49,18 @@
         .order-section-bg {
             background-image: url('images/imgi_11_order_bg.jpg');
             background-size: cover;
-            background-position: 40% center; /* Movido para a esquerda no desktop */
+            background-position: 40% center; /* Mantido conforme solicitado para desktop */
             background-repeat: no-repeat;
         }
 
         /* Media Query para Mobile */
         @media (max-width: 1023px) {
             .hero-background {
-                /* Mantido conforme ajuste anterior */
                 background-position: 30% center; 
             }
             .order-section-bg {
-                /* Movido 2x para a esquerda (de 30% para 10%) */
-                background-position: 10% center;
+                /* Ajustado para ficar exatamente centralizado no meio apenas no mobile */
+                background-position: center center;
             }
         }
 
@@ -170,7 +169,7 @@
                         </div>
                         <p class="text-[#0F172A] text-sm md:text-base leading-relaxed max-w-[250px]">
                             <span class="font-bold">Wypełnij formularz zamówienia.</span><br>
-                            Twoje dane osobowe são bezpieczne.
+                            Twoje dane osobowe są bezpieczne.
                         </p>
                     </div>
                     <div class="flex flex-col items-center">
