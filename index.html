@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     
-    <!-- SEO / Head Injection -->
+    <!-- SEO Básico -->
     <title>Slimline® Site Oficial | Purificação e Bem-Estar</title>
     <meta name="description" content="Slimline® oferece a purificação que o seu corpo necessita com ingredientes desintoxicantes potentes.">
 
@@ -32,7 +32,7 @@
             animation: marquee 30s linear infinite;
         }
 
-        /* Garantindo que a imagem de fundo apareça na Secção 1 */
+        /* Imagem de fundo da Secção 1 */
         .hero-background {
             background-image: linear-gradient(rgba(243, 235, 229, 0.75), rgba(243, 235, 229, 0.75)), url('images/slimsline-fund.png');
             background-size: cover;
@@ -41,7 +41,7 @@
             background-attachment: scroll;
         }
 
-        /* Garantindo que a imagem de fundo apareça na Secção 3 */
+        /* Imagem de fundo da Secção 3 */
         .order-section-bg {
             background-image: linear-gradient(rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.3)), url('images/imgi_11_order_bg.jpg');
             background-size: cover;
@@ -185,63 +185,52 @@
         <section id="order" class="order-section-bg py-24 md:py-32 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center justify-between gap-12">
                 
-                <!-- Conteúdo de Texto (Esquerda) -->
-                <div class="w-full lg:w-1/2 text-center lg:text-left z-10">
+                <!-- Coluna de Texto e Botão (Esquerda) -->
+                <div class="w-full lg:w-3/5 text-center lg:text-left z-10">
                     <h2 class="text-7xl md:text-9xl font-serif-display text-white drop-shadow-md leading-none mb-4">Slimline</h2>
                     <h3 class="text-3xl md:text-4xl font-black text-[#0F172A] uppercase tracking-tight mb-4">
                         Tripla ajuda para o corpo
                     </h3>
-                    <p class="text-lg md:text-xl font-bold text-[#0F172A] mb-12">
+                    <p class="text-lg md:text-xl font-bold text-[#0F172A] mb-8">
                         Naturalmente. Com eficácia. Com segurança.
                     </p>
 
-                    <!-- Lista de Benefícios com Ícones -->
-                    <div class="space-y-6 max-w-sm mx-auto lg:mx-0 text-left">
+                    <!-- Lista de Benefícios -->
+                    <div class="space-y-6 max-w-sm mx-auto lg:mx-0 text-left mb-12">
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-md">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M20.354 15.354A9 9 0 018.646 3.646 9.003 9.003 0 0012 21a9.003 9.003 0 008.354-5.646z"></path></svg>
                             </div>
-                            <p class="font-medium text-sm md:text-base">Desintoxicação <span class="font-black">natural</span></p>
+                            <p class="font-medium text-sm md:text-base text-[#0F172A]">Desintoxicação <span class="font-black">natural</span></p>
                         </div>
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-md">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M17.657 18.657A8 8 0 016.343 7.343S7 9 9 10c0-2 .5-5 2.986-7C14 5 17 9 17 13a5 5 0 01-5 5z"></path></svg>
                             </div>
-                            <p class="font-medium text-sm md:text-base">Perda de peso <span class="font-black">natural</span></p>
+                            <p class="font-medium text-sm md:text-base text-[#0F172A]">Perda de peso <span class="font-black">natural</span></p>
                         </div>
                         <div class="flex items-center gap-4">
                             <div class="w-10 h-10 rounded-full bg-white flex items-center justify-center shadow-md">
                                 <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="2"><path d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z"></path></svg>
                             </div>
-                            <p class="font-medium text-sm md:text-base"><span class="font-black">Saúde e juventude</span></p>
+                            <p class="font-medium text-sm md:text-base text-[#0F172A]"><span class="font-black">Saúde e juventude</span></p>
                         </div>
+                    </div>
+
+                    <!-- Botão de Encomenda direto abaixo do texto -->
+                    <div class="flex justify-center lg:justify-start">
+                        <a href="https://vjouu.doctorwso.com/l" class="inline-block bg-[#0F172A] hover:bg-black text-white font-black py-5 px-12 rounded-2xl shadow-2xl transition-all transform hover:scale-105 active:scale-95 uppercase tracking-widest text-sm md:text-base">
+                            ENCOMENDE JÁ (50% OFF)
+                        </a>
                     </div>
                 </div>
 
-                <!-- Imagem do Produto (Centro) -->
-                <div class="relative w-full lg:w-1/3 flex justify-center z-10">
-                    <!-- Referência à imagem do produto na pasta images -->
+                <!-- Coluna da Imagem do Produto (Direita) -->
+                <div class="relative w-full lg:w-2/5 flex justify-center lg:justify-end z-10">
                     <img src="images/slimline-product.png" 
                          onerror="this.src='https://via.placeholder.com/400x600?text=Slimline+Suplemento'"
-                         class="w-64 md:w-80 object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.4)]" 
+                         class="w-64 md:w-80 lg:w-[450px] object-contain drop-shadow-[0_35px_35px_rgba(0,0,0,0.4)]" 
                          alt="Slimline Product">
-                </div>
-
-                <!-- Botão CTA (Card de Oferta) -->
-                <div class="w-full lg:w-1/4 flex flex-col items-center lg:items-end z-10">
-                    <div class="bg-white/90 backdrop-blur-md p-10 rounded-[2.5rem] shadow-2xl flex flex-col items-center gap-6 w-full max-w-[320px] border border-black/5">
-                        <h4 class="text-xl font-serif-display font-bold uppercase text-center text-[#0F172A]">Peça Agora</h4>
-                        <div class="text-center">
-                            <span class="block text-4xl font-black text-red-600">50% OFF</span>
-                            <span class="text-[10px] font-bold uppercase tracking-widest text-slate-400">Desconto de Lançamento</span>
-                        </div>
-                        <a href="https://vjouu.doctorwso.com/l" class="w-full bg-[#0F172A] hover:bg-black text-white font-black py-5 rounded-2xl shadow-lg transition-all transform hover:scale-105 active:scale-95 uppercase tracking-widest text-sm text-center block">
-                            ENCOMENDE JÁ
-                        </a>
-                        <p class="text-[9px] font-bold text-slate-400 uppercase tracking-tighter text-center">
-                            Aproveite o Envio Imediato
-                        </p>
-                    </div>
                 </div>
 
             </div>
