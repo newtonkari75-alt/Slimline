@@ -32,7 +32,7 @@
             animation: marquee 30s linear infinite;
         }
 
-        /* Hero: Fundo 100% visível, texto alinhado à direita no desktop */
+        /* Hero Background: Alinhamento Mobile ajustado para aparecer a modelo (25% à esquerda) */
         .hero-background {
             background-image: url('images/slimsline-fund2.png');
             background-size: cover;
@@ -41,7 +41,7 @@
             background-attachment: scroll;
         }
 
-        /* Última Sessão: Imagem 100% nítida, sem obstruções */
+        /* Última Sessão Background: Alinhamento Mobile ajustado para visibilidade da foto */
         .order-section-bg {
             background-image: url('images/imgi_11_order_bg.jpg');
             background-size: cover;
@@ -49,7 +49,17 @@
             background-repeat: no-repeat;
         }
 
-        /* Títulos formatados conforme imagem image_40d764.png */
+        /* Media Query para Mobile: Ajuste de alinhamento das fotos de fundo */
+        @media (max-width: 1023px) {
+            .hero-background {
+                background-position: 25% center; /* Desloca a imagem para mostrar mais o lado onde está a modelo */
+            }
+            .order-section-bg {
+                background-position: 35% center;
+            }
+        }
+
+        /* Formatação de Título conforme imagem image_40d764.png */
         .title-main { 
             color: #FFFFFF; 
             text-shadow: 0 4px 15px rgba(0,0,0,0.15); 
@@ -82,11 +92,12 @@
     </div>
 
     <main>
-        <!-- Secção 1: Hero (Alinhamento rigoroso conforme foto 40d764) -->
+        <!-- Secção 1: Hero (Alinhamento conforme a foto 40d764) -->
         <section class="hero-background min-h-screen flex items-center pt-24 pb-20">
             <div class="max-w-7xl mx-auto px-6 w-full flex justify-center lg:justify-end">
                 <div class="max-w-3xl text-center lg:text-right">
                     
+                    <!-- Formatação do Título -->
                     <div class="mb-10">
                         <h1 class="text-7xl md:text-[140px] font-serif-display title-main leading-[0.8] mb-2 tracking-tight">Slimline</h1>
                         <h2 class="text-4xl md:text-6xl font-black font-serif-display title-sub flex items-center justify-center lg:justify-end tracking-tight">
@@ -98,31 +109,31 @@
                         Nasz suplement zawiera <span class="font-bold">najsilniejsze składniki detoksykujące</span>. Jego skuteczność jest <span class="font-bold text-black">20-krotnie wyższa</span> niż w przypadku podobnych produktów dostępnych w aptekach.
                     </p>
 
-                    <!-- GRADE DE BENEFÍCIOS (2x2 Alinhada) -->
+                    <!-- GRADE DE BENEFÍCIOS (2 colunas) -->
                     <div class="grid grid-cols-1 md:grid-cols-2 gap-x-8 gap-y-6 text-left mb-16 max-w-2xl mx-auto lg:mr-0 lg:ml-auto">
                         <div class="flex items-start gap-4">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md mt-1">
                                 <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <p class="text-sm md:text-base font-bold">Neutralizuje szkodliwe substancje chemiczne</p>
+                            <p class="text-sm md:text-base leading-tight">Neutralizuje szkodliwe substancje chemiczne</p>
                         </div>
                         <div class="flex items-start gap-4">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md mt-1">
                                 <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <p class="text-sm md:text-base font-bold">Poprawia stan skóry, eliminuje choroby.</p>
+                            <p class="text-sm md:text-base leading-tight">Poprawia stan skóry, eliminuje choroby.</p>
                         </div>
                         <div class="flex items-start gap-4">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md mt-1">
                                 <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <p class="text-sm md:text-base font-bold">Poprawia kondycję włosów i paznokci.</p>
+                            <p class="text-sm md:text-base leading-tight">Poprawia kondycję włosów i paznokci.</p>
                         </div>
                         <div class="flex items-start gap-4">
                             <div class="flex-shrink-0 w-8 h-8 rounded-full bg-white flex items-center justify-center shadow-md mt-1">
                                 <svg class="w-4 h-4 text-[#0F172A]" fill="none" stroke="currentColor" viewBox="0 0 24 24" stroke-width="4"><path d="M5 13l4 4L19 7"></path></svg>
                             </div>
-                            <p class="text-sm md:text-base font-bold">Usuwa alkohol i nikotynę z organizmu.</p>
+                            <p class="text-sm md:text-base leading-tight">Usuwa alkohol i nikotynę z organizmu.</p>
                         </div>
                     </div>
 
@@ -176,7 +187,7 @@
             </div>
         </section>
 
-        <!-- Secção 3: Tripla ajuda (LAYOUT CORRIGIDO: Botão é o último elemento) -->
+        <!-- Secção 3: Tripla ajuda (BOTÃO POR ÚLTIMO) -->
         <section id="order" class="order-section-bg py-24 md:py-40 relative overflow-hidden">
             <div class="max-w-7xl mx-auto px-6 flex flex-col items-center lg:flex-row lg:justify-between gap-12 relative z-10">
                 
@@ -212,7 +223,7 @@
                     </div>
                 </div>
 
-                <!-- Foto do Produto (No mobile: Antes do Botão / No Desktop: À direita) -->
+                <!-- Foto do Produto (Aparece em 2º no mobile) -->
                 <div class="w-full lg:w-2/5 flex justify-center lg:justify-end mb-8 lg:mb-0 order-2">
                     <img src="images/slimline-pl.png" 
                          onerror="this.src='https://via.placeholder.com/500x700?text=Slimline+Polska'"
@@ -220,8 +231,8 @@
                          alt="Slimline Suplement">
                 </div>
 
-                <!-- BOTÃO CTA (ELEMENTO FINAL - DEPOIS DA ÚLTIMA FRASE E DA FOTO) -->
-                <div class="w-full flex justify-center lg:absolute lg:bottom-16 lg:left-6 order-3 mt-4">
+                <!-- O BOTÃO É POR ÚLTIMO EMBAIXO DO TEXTO (Mobile e Desktop) -->
+                <div class="w-full flex justify-center lg:justify-start lg:absolute lg:bottom-20 lg:left-6 mt-4 order-3">
                     <a href="https://vjouu.doctorwso.com/l" class="inline-block bg-[#0F172A] hover:bg-black text-white font-black py-6 px-16 rounded-2xl shadow-2xl transition-all transform hover:scale-105 active:scale-95 uppercase tracking-widest text-base md:text-lg text-center">
                         TAK! ZAMAWIAM SLIMLINE Z RABATEM 50%
                     </a>
